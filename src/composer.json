@@ -1,0 +1,30 @@
+{
+  "name": "tarsRpc",
+  "description": "tars rpc",
+  "require": {
+    "php": ">=7.2.0",
+    "phptars/tars-server": ">0.1",
+    "phptars/tars-deploy": ">0.1",
+    "phptars/tars2php": ">0.1",
+    "phptars/tars-log": ">0.1",
+    "ext-zip": ">=0.0.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Server\\": "./"
+    }
+  },
+  "minimum-stability": "stable",
+  "scripts": {
+    "deploy": "\\Tars\\deploy\\Deploy::run"
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.laravel-china.org/"
+    }
+  }
+}
