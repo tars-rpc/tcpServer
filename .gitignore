@@ -1,0 +1,12 @@
+/.idea
+*.log
+*.tgz
+*.pid
+.settings/
+.git/
+.project
+.env
+*.lock
+runtime/
+vendor/
+temp/
