@@ -6,6 +6,7 @@
 .settings/
 .git/
 .project
+.vscode
 .env
 *.lock
 runtime/
