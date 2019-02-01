@@ -8,7 +8,7 @@
 return [
     'appName'         => 'PHPTest',
     'serverName'      => 'PHPServer',
-    'objName'         => 'obj',
+    'objName'         => 'Obj',
     'withServant'     => true,//决定是服务端,还是客户端的自动生成
     'tarsFiles'       => array(
         './example.tars'
