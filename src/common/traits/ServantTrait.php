@@ -30,19 +30,7 @@ trait ServantTrait
 
     protected $data = [];
 
-    public $_servantName = 'PHPTest.PHPServer.obj';
-
-    public function __construct(CommunicatorConfig $config)
-    {
-        try {
-            $config->setServantName($this->_servantName);
-            $this->_communicator = new Communicator($config);
-            $this->_iVersion = $config->getIVersion();
-            $this->_iTimeout = empty($config->getAsyncInvokeTimeout()) ? 2 : $config->getAsyncInvokeTimeout();
-        } catch (\Exception $e) {
-            throw $e;
-        }
-    }
+    public $_servantName = 'PHPTest.PHPServer.Obj';
 
     /**
      * @desc rpc调用前的准备

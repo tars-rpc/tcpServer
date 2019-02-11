@@ -8,8 +8,9 @@
 
 namespace Server\services;
 
+use Server\common\traits\CommunicatorConfigTrait;
 
-class BaseService
+abstract class BaseService
 {
-
+    use CommunicatorConfigTrait;
 }
