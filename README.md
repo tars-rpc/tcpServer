@@ -18,6 +18,11 @@ chmod u+x tars2php.sh
 ./tars2php.sh
 ```
 
+## 其他
+
+### 辅助事项
+* 查看服务进程的日志 `tail -f /data/tars/tars_data/tars/app_log/PHPTest/PHPServer/PHPTest.PHPServer.log`
+
 
 ## 参考资料
 * tarsphp官方文档 https://tarsphp.gitbook.io/doc/
