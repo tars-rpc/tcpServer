@@ -10,6 +10,7 @@ namespace Server\common\traits;
 
 use Tars\client\CommunicatorConfig;
 use Tars\client\Communicator;
+use Server\conf\CommunicateConf;
 
 trait CommunicatorConfigTrait
 {
@@ -29,7 +30,7 @@ trait CommunicatorConfigTrait
             $config->setServantName($this->_servantName);
             $this->_communicator = new Communicator($config);
             $this->_iVersion = $config->getIVersion();
-            $this->_iTimeout = empty($config->getAsyncInvokeTimeout()) ? 2 : $config->getAsyncInvokeTimeout();
+            $this->_iTimeout = empty($config->getAsyncInvokeTimeout()) ? CommunicateConf::$communicateTimeout : $config->getAsyncInvokeTimeout();
         } catch (\Exception $e) {
             throw $e;
         }
