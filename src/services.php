@@ -8,6 +8,6 @@
 
 // 以namespace的方式,在psr4的框架下对代码进行加载
 return [
-    'home-api' => '\Server\servant\PHPTest\PHPServer\obj\TestTafServiceServant',
-    'home-class' => '\Server\impl\PHPServerServantImpl'
+    'home-api' => '\Server\servant\PHPTest\PHPServer\obj\Servant',
+    'home-class' => '\Server\impl\PHPTestServantImpl'
 ];

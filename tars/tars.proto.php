@@ -11,7 +11,7 @@ return [
     'objName'         => 'Obj',
     'withServant'     => true,//决定是服务端,还是客户端的自动生成
     'tarsFiles'       => array(
-        './example.tars'
+        './TarsService.tars'
     ),
     'dstPath'         => '../src/servant',
     'namespacePrefix' => 'Server\servant',

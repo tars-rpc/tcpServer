@@ -1,6 +1,6 @@
 <?php
 
-namespace Server\servant\PHPTest\PHPServer\obj;
+namespace Server\servant\PHPTest\PHPServer\Obj;
 
 interface Servant {
 	/**
@@ -22,3 +22,4 @@ interface Servant {
 	 */
 	public function put($paramstr,&$result);
 }
+
